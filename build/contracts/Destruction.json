@@ -1,0 +1,119 @@
+{
+  "contract_name": "Destruction",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "distoryAndSend",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "newOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "distory",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "oldOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipUpdate",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a03161790555b5b6102d7806100316000396000f300606060405236156100755763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166379ba5097811461007a5780638937e2231461008f5780638da5cb5b146100b0578063d4ee1d90146100df578063f2fde38b1461010e578063f60ca6b61461012f575b600080fd5b341561008557600080fd5b61008d610144565b005b341561009a57600080fd5b61008d600160a060020a03600435166101d3565b005b34156100bb57600080fd5b6100c36101fe565b604051600160a060020a03909116815260200160405180910390f35b34156100ea57600080fd5b6100c361020d565b604051600160a060020a03909116815260200160405180910390f35b341561011957600080fd5b61008d600160a060020a036004351661021c565b005b341561013a57600080fd5b61008d61027f565b005b60015433600160a060020a0390811691161461015f57600080fd5b600154600054600160a060020a0391821691167fe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab9665260405160405180910390a3600180546000805473ffffffffffffffffffffffffffffffffffffffff19908116600160a060020a038416179091551690555b565b60005433600160a060020a039081169116146101ee57600080fd5b80600160a060020a0316ff5b5b50565b600054600160a060020a031681565b600154600160a060020a031681565b60005433600160a060020a0390811691161461023757600080fd5b600054600160a060020a038281169116141561025257600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b50565b60005433600160a060020a0390811691161461029a57600080fd5b600054600160a060020a0316ff5b5b5600a165627a7a72305820b740d84c952fb9461165de91be745aae6a8d1b0894b0b1fb85de72ef2ec7d5f40029",
+  "networks": {
+    "1506047414604": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbcf345ee2ba921489fce62e12f3d0743f9415593",
+      "updated_at": 1506063964498
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506063964498
+}
