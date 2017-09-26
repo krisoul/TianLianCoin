@@ -5,7 +5,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_recipient",
+          "name": "recipient",
           "type": "address"
         }
       ],
@@ -26,5 +26,5 @@
   "unlinked_binary": "0x",
   "networks": {},
   "schema_version": "0.0.5",
-  "updated_at": 1506063623805
+  "updated_at": 1506393163338
 }

@@ -58,12 +58,12 @@
       "inputs": [
         {
           "indexed": true,
-          "name": "_oldOwner",
+          "name": "oldOwner",
           "type": "address"
         },
         {
           "indexed": true,
-          "name": "_newOwner",
+          "name": "newOwner",
           "type": "address"
         }
       ],
@@ -71,9 +71,9 @@
       "type": "event"
     }
   ],
-  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a03191633600160a060020a03161790555b5b61022e8061003c6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166379ba5097811461005e5780638da5cb5b14610073578063d4ee1d90146100a2578063f2fde38b146100d1575b600080fd5b341561006957600080fd5b6100716100f2565b005b341561007e57600080fd5b610086610181565b604051600160a060020a03909116815260200160405180910390f35b34156100ad57600080fd5b610086610190565b604051600160a060020a03909116815260200160405180910390f35b34156100dc57600080fd5b610071600160a060020a036004351661019f565b005b60015433600160a060020a0390811691161461010d57600080fd5b600154600054600160a060020a0391821691167fe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab9665260405160405180910390a3600180546000805473ffffffffffffffffffffffffffffffffffffffff19908116600160a060020a038416179091551690555b565b600054600160a060020a031681565b600154600160a060020a031681565b60005433600160a060020a039081169116146101ba57600080fd5b600054600160a060020a03828116911614156101d557600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b505600a165627a7a7230582056efcdf07da3b2e8a535fd002d300866f079fd47d61ebaaf75820ad843cafe130029",
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a03191633600160a060020a03161790555b5b61022e8061003c6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166379ba5097811461005e5780638da5cb5b14610073578063d4ee1d90146100a2578063f2fde38b146100d1575b600080fd5b341561006957600080fd5b6100716100f2565b005b341561007e57600080fd5b610086610181565b604051600160a060020a03909116815260200160405180910390f35b34156100ad57600080fd5b610086610190565b604051600160a060020a03909116815260200160405180910390f35b34156100dc57600080fd5b610071600160a060020a036004351661019f565b005b60015433600160a060020a0390811691161461010d57600080fd5b600154600054600160a060020a0391821691167fe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab9665260405160405180910390a3600180546000805473ffffffffffffffffffffffffffffffffffffffff19908116600160a060020a038416179091551690555b565b600054600160a060020a031681565b600154600160a060020a031681565b60005433600160a060020a039081169116146101ba57600080fd5b600054600160a060020a03828116911614156101d557600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b505600a165627a7a723058207002d6a43e519eda36ed0ba64c1669056f5635333e72b92fc138da2ac4b1a3780029",
   "networks": {
-    "1506047414604": {
+    "1506321455822": {
       "events": {
         "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
           "anonymous": false,
@@ -94,10 +94,178 @@
         }
       },
       "links": {},
-      "address": "0x6fac8eca671b8c28cd9bfe40a27cd8b0f4a28640",
-      "updated_at": 1506063964484
+      "address": "0x1964e015bcc1cc4cdd2a85f085f64b16d93e8b67",
+      "updated_at": 1506321639357
+    },
+    "1506322588238": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xc6df86c4b962bb9eaadd257c6800a2f63202160d",
+      "updated_at": 1506322822425
+    },
+    "1506322833136": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x08d5fd3aadce24c2ff81baadf1b6a5eb74a2398e",
+      "updated_at": 1506323021099
+    },
+    "1506327240457": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x6a0d77f88a6eb90a2988ba960f3d8639c586854e",
+      "updated_at": 1506327291274
+    },
+    "1506332141098": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xa47e79b1e4348928318d8803b1a6d33913b1def3",
+      "updated_at": 1506332164847
+    },
+    "1506391029386": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xdf4c4f89a5ea8adea6d4bf3053f1cb94a0b57e9a",
+      "updated_at": 1506391600272
+    },
+    "1506392756388": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1228efc66d7cbd1dc82c2981bdbdd15c886cfa9f",
+      "updated_at": 1506392843083
+    },
+    "1506393144400": {
+      "events": {
+        "0xe366b15bfd568800b5088faecf86f28b1e3ea0720e3d6bf79c7bdb105ab96652": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipUpdate",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x44f7234a9bdbc4cdd197e025ab704b2261074b81",
+      "updated_at": 1506393174970
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1506063964484
+  "updated_at": 1506393174970
 }

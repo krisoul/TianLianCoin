@@ -10,6 +10,6 @@ module.exports = function(deployer) {
   deployer.deploy(ERC20Token);
   deployer.deploy(Destruction);
   deployer.deploy(SafeMath);
-  deployer.deploy(TianLianCoin);
+  deployer.deploy(TianLianCoin, 100000, 10000);
 
 };

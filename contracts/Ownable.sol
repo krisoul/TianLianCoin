@@ -6,8 +6,8 @@ contract Ownable is IOwnable {
     address public owner;
     address public newOwner;
 
-    // event OwnershipTransferred(address indexed oldOwner, address indexed newOwner);
-    event OwnershipUpdate(address indexed _oldOwner, address indexed _newOwner);
+
+    // event OwnershipUpdate(address indexed _oldOwner, address indexed _newOwner);
 
  
     /**************************************************************************

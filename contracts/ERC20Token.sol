@@ -10,40 +10,13 @@ import './SafeMath.sol';
 contract ERC20Token is IERC20Token {
     using SafeMath for uint256;
 
-    // uint256 public totalSupply;
-
-    string  public standard = 'Token 0.1';
-    string  public name = '';
-    string  public symbol = '';
-    uint8   public decimals = 0;
-    uint256  public totalSupply = 0;
+    uint256 public totalSupply;
 
     mapping (address => uint256) public balances;              /* 代币余额 */
     mapping (address => mapping (address => uint256)) allowed;   /* 查询余额 */
 
-    event Transfer(address indexed _from, address indexed _to, uint256 _amount);
-    event Approval(address indexed _owner, address indexed _spender, uint256 _amount);
-    
-    function ERC20Token(string _name, string _symbol, uint256 _totalSupply){
-        name = _name;
-        symbol = _symbol;
-        totalSupply = _totalSupply;
-        balances[msg.sender] = totalSupply;
-    }
-
-
-
-    /**************************************************************************
-    函数名: balanceOf(address)
-    功能  ：获得地址账户的余额
-    参数  ：
-        _owner (address) - 要查询的账户地址
-    返回  ：
-        balance (uint256) - 账户余额
-    **************************************************************************/
-    function balanceOf(address _owner)public constant returns (uint256 balance) {
-        return balances[_owner];
-    }
+    // event Transfer(address indexed _from, address indexed _to, uint256 _amount);
+    // event Approval(address indexed _owner, address indexed _spender, uint256 _amount);
 
     /**************************************************************************
     函数名: transfer(address，uint256)
@@ -115,6 +88,30 @@ contract ERC20Token is IERC20Token {
     }
 
     /**************************************************************************
+    函数名: totalSupply
+    功能  : 获取代币总量。
+    返回  ：
+        supply (uint256) - 代币总数量
+    **************************************************************************/
+    function totalSupply()
+        public constant returns(uint256 supply) {
+        return totalSupply;
+    }
+
+    /**************************************************************************
+    函数名: balanceOf(address)
+    功能  ：获得地址账户的余额
+    参数  ：
+        _owner (address) - 要查询的账户地址
+    返回  ：
+        balance (uint256) - 账户余额
+    **************************************************************************/
+    function balanceOf(address _owner)
+        public constant returns (uint256) {
+        return balances[_owner];
+    }
+
+    /**************************************************************************
     函数名: allowance(address，address)
     功能  : 获取授权额度。
     参数  ：
@@ -124,18 +121,10 @@ contract ERC20Token is IERC20Token {
         remaining (uint256) - 授权剩余额度
     **************************************************************************/
     function allowance(address _owner, address _spender)
-        public constant returns (uint256){
+        public constant returns (uint256) {
         return allowed[_owner][_spender];
     }
 
-    /**************************************************************************
-    函数名: totalSupply
-    功能  : 获取代币总量。
-    返回  ：
-        supply (uint256) - 代币总数量
-    **************************************************************************/
-    function totalSupply()public constant returns(uint256 supply){
-        return totalSupply;
-    }
+
 
 }
